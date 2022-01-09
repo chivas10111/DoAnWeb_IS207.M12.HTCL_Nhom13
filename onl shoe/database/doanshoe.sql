@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 26, 2021 lúc 05:00 AM
--- Phiên bản máy phục vụ: 10.4.22-MariaDB
--- Phiên bản PHP: 8.0.13
+-- Host: 127.0.0.1
+-- Generation Time: Jan 09, 2022 at 02:47 AM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `doanshoe`
+-- Database: `doanshoe`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
@@ -34,7 +34,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Đang đổ dữ liệu cho bảng `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`adminid`, `username`, `password`) VALUES
@@ -43,7 +43,7 @@ INSERT INTO `admin` (`adminid`, `username`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `contact`
+-- Table structure for table `contact`
 --
 
 CREATE TABLE `contact` (
@@ -53,7 +53,7 @@ CREATE TABLE `contact` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Đang đổ dữ liệu cho bảng `contact`
+-- Dumping data for table `contact`
 --
 
 INSERT INTO `contact` (`contact_id`, `email`, `message`) VALUES
@@ -154,12 +154,46 @@ INSERT INTO `contact` (`contact_id`, `email`, `message`) VALUES
 (95, '', ''),
 (96, '', ''),
 (97, '', ''),
-(98, '', '');
+(98, '', ''),
+(99, '', ''),
+(100, '', ''),
+(101, '', ''),
+(102, '', ''),
+(103, '', ''),
+(104, '', ''),
+(105, '', ''),
+(106, '', ''),
+(107, '', ''),
+(108, '', ''),
+(109, '', ''),
+(110, '', ''),
+(111, '', ''),
+(112, '', ''),
+(113, '', ''),
+(114, '', ''),
+(115, '', ''),
+(116, '', ''),
+(117, '', ''),
+(118, '', ''),
+(119, '', ''),
+(120, '', ''),
+(121, '', ''),
+(122, '', ''),
+(123, '', ''),
+(124, '', ''),
+(125, '', ''),
+(126, '', ''),
+(127, '', ''),
+(128, '', ''),
+(129, '', ''),
+(130, '', ''),
+(131, '', ''),
+(132, '', '');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `customer`
+-- Table structure for table `customer`
 --
 
 CREATE TABLE `customer` (
@@ -174,7 +208,7 @@ CREATE TABLE `customer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Đang đổ dữ liệu cho bảng `customer`
+-- Dumping data for table `customer`
 --
 
 INSERT INTO `customer` (`customerid`, `firstname`, `lastname`, `address`, `country`, `telephone`, `email`, `password`) VALUES
@@ -184,7 +218,7 @@ INSERT INTO `customer` (`customerid`, `firstname`, `lastname`, `address`, `count
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `product`
+-- Table structure for table `product`
 --
 
 CREATE TABLE `product` (
@@ -198,22 +232,22 @@ CREATE TABLE `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Đang đổ dữ liệu cho bảng `product`
+-- Dumping data for table `product`
 --
 
 INSERT INTO `product` (`product_id`, `product_name`, `product_price`, `product_size`, `product_image`, `brand`, `category`) VALUES
-(1, 'Nike Air Max 90 SE', '3829000', '35.5', 'air-max-90-se-shoes-LsgRxx.jpg', 'Nike', 'women'),
-(2, 'Nike Air Max Pre-Day LX', '109', '38', 'air-max-pre-day-lx-shoes-jxsMrq.jpg', 'Nike', 'feature'),
-(3, 'Adidas Gent', '5000000', '41', 'Adidas-Men-Basketball-Shoes-2.jpg', 'Adidas', 'men'),
-(4, 'Adidas 599 LRG', '3000000', '40.5', 'Adidas Basketball Shoes 599_LRG.jpg', 'Adidas', 'men'),
+(1, 'Nike Air Max 90 SE', '166', '35.5', 'air-max-90-se-shoes-LsgRxx.jpg', 'Nike', 'women'),
+(2, 'Nike Max Pre-Day LX', '109', '38', 'air-max-pre-day-lx-shoes-jxsMrq.jpg', 'Nike', 'feature'),
+(3, 'Adidas Gent', '217', '41', 'Adidas-Men-Basketball-Shoes-2.jpg', 'Adidas', 'men'),
+(4, 'Adidas 599 LRG', '130', '40.5', 'Adidas Basketball Shoes 599_LRG.jpg', 'Adidas', 'men'),
 (5, 'LeBron 18 Low \'Bugs vs Marvin\'', '69', '44', 'lebron-18-low-bugs-vs-marvin-basketball-shoe-lCZ1gS.jpg', 'Nike', 'basketball'),
 (6, 'Adidas Adizero Black', '169', '27', 'adidas-Rose-Dominate-Adizero-shoes.jpg', 'Adidas', 'feature'),
-(7, 'Adidas Adizero Blue', '1800000', '35', 'Adidas_Rose_Shoes_009.jpg', 'Adidas', 'women'),
+(7, 'Adidas Adizero Blue', '78', '35', 'Adidas_Rose_Shoes_009.jpg', 'Adidas', 'women'),
 (8, 'Air Jordan 11 Retro Low', '99', '31', 'air-jordan-11-retro-low-younger-shoe-7rs4bz.jpg', 'Nike', 'sale'),
 (9, 'Nike SB Shane T', '239', '40', 'sb-shane-t-skate-shoes-Dk8wmJ.jpg', 'Nike', 'feature'),
-(10, 'Nike Mercurial Vapor 14 Academy FG/MG', '2349000', '47', 'mercurial-vapor-14-academy-fg-mg-multi-ground-football-boot-dhNP1w.jpg', 'Nike', 'football'),
-(11, 'Nike Mercurial Superfly 8 Academy KM MG', '2779000', '42', 'mercurial-superfly-8-academy-km-mg-multi-ground-football-boots-p5QpfQ.jpg', 'Nike', 'football'),
-(12, 'Alpha bounce ', '800000', '43', 'adidas-alphabounce-engineered-mesh-collegiate-navy-1-700x526.jpg', 'adidas', 'running'),
+(10, 'Nike Mercurial Vapor 14 Academy FG/MG', '102', '47', 'mercurial-vapor-14-academy-fg-mg-multi-ground-football-boot-dhNP1w.jpg', 'Nike', 'football'),
+(11, 'Nike Mercurial Superfly 8 Academy KM MG', '121', '42', 'mercurial-superfly-8-academy-km-mg-multi-ground-football-boots-p5QpfQ.jpg', 'Nike', 'football'),
+(12, 'Alpha bounce ', '117', '43', 'adidas-alphabounce-engineered-mesh-collegiate-navy-1-700x526.jpg', 'adidas', 'running'),
 (13, 'Adidas baseketball', '79', '42', 'adidas-giay-bong-ro-nam.jpg', 'Adidas', 'basketball'),
 (14, 'Mac mill ennium boost g', '99', '43', 'adidas-mac-millennium-boost-g27749.jpg', 'Adidas', 'basketball'),
 (15, 'Football soccer X Ghosted', '129', '41', 'adidas FOOTBALL SOCCER X Ghosted.jpg', 'Adidas', 'football'),
@@ -237,7 +271,7 @@ INSERT INTO `product` (`product_id`, `product_name`, `product_price`, `product_s
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `stock`
+-- Table structure for table `stock`
 --
 
 CREATE TABLE `stock` (
@@ -247,7 +281,7 @@ CREATE TABLE `stock` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Đang đổ dữ liệu cho bảng `stock`
+-- Dumping data for table `stock`
 --
 
 INSERT INTO `stock` (`stock_id`, `product_id`, `qty`) VALUES
@@ -256,7 +290,7 @@ INSERT INTO `stock` (`stock_id`, `product_id`, `qty`) VALUES
 (3, 3, 20),
 (4, 4, 20),
 (5, 5, 42),
-(6, 6, 30),
+(6, 6, 29),
 (7, 7, 20),
 (8, 8, 20),
 (9, 9, 19),
@@ -267,7 +301,7 @@ INSERT INTO `stock` (`stock_id`, `product_id`, `qty`) VALUES
 (14, 14, 41),
 (15, 15, 37),
 (16, 16, 36),
-(17, 17, 22),
+(17, 17, 21),
 (18, 18, 34),
 (19, 19, 30),
 (20, 20, 42),
@@ -286,7 +320,7 @@ INSERT INTO `stock` (`stock_id`, `product_id`, `qty`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `transaction`
+-- Table structure for table `transaction`
 --
 
 CREATE TABLE `transaction` (
@@ -298,19 +332,32 @@ CREATE TABLE `transaction` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Đang đổ dữ liệu cho bảng `transaction`
+-- Dumping data for table `transaction`
 --
 
 INSERT INTO `transaction` (`transaction_id`, `customerid`, `amount`, `order_stat`, `order_date`) VALUES
+(2, 1, 249, 'Confirmed', 'Jan 07, 2022'),
+(9, 1, 338, 'ON HOLD', 'Jan 04, 2022'),
+(21, 1, 109, 'ON HOLD', 'Jan 05, 2022'),
+(33, 1, 208, 'ON HOLD', 'Jan 04, 2022'),
+(41, 1, 169, 'Confirmed', 'Jan 07, 2022'),
+(55, 1, 169, 'ON HOLD', 'Jan 07, 2022'),
 (72, 2, 3759199, 'Cancelled', 'Dec 22, 2021'),
 (85, 2, 12518398, 'Cancelled', 'Dec 22, 2021'),
+(452, 1, 248, 'ON HOLD', 'Jan 07, 2022'),
+(623, 1, 209, 'ON HOLD', 'Jan 07, 2022'),
 (635, 1, 4109000, 'Cancelled', 'Nov 18, 2021'),
-(2335, 2, 21277597, 'Cancelled', 'Dec 23, 2021');
+(851, 1, 169, 'ON HOLD', 'Jan 07, 2022'),
+(1446, 1, 109, 'ON HOLD', 'Jan 04, 2022'),
+(1468, 1, 239, 'ON HOLD', 'Jan 08, 2022'),
+(2335, 2, 21277597, 'Cancelled', 'Dec 23, 2021'),
+(7990, 1, 169, 'ON HOLD', 'Jan 07, 2022'),
+(11062, 1, 109, 'ON HOLD', 'Jan 07, 2022');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `transaction_detail`
+-- Table structure for table `transaction_detail`
 --
 
 CREATE TABLE `transaction_detail` (
@@ -321,7 +368,7 @@ CREATE TABLE `transaction_detail` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Đang đổ dữ liệu cho bảng `transaction_detail`
+-- Dumping data for table `transaction_detail`
 --
 
 INSERT INTO `transaction_detail` (`transacton_detail_id`, `product_id`, `order_qty`, `transaction_id`) VALUES
@@ -330,87 +377,102 @@ INSERT INTO `transaction_detail` (`transacton_detail_id`, `product_id`, `order_q
 (3, 5, 2, 85),
 (4, 6, 1, 85),
 (5, 5, 3, 2335),
-(6, 6, 2, 2335);
+(6, 6, 2, 2335),
+(7, 6, 2, 9),
+(8, 2, 1, 1446),
+(9, 2, 1, 33),
+(10, 30, 1, 33),
+(11, 2, 1, 21),
+(12, 17, 1, 2),
+(13, 19, 1, 623),
+(14, 6, 1, 41),
+(15, 6, 1, 452),
+(16, 13, 1, 452),
+(17, 6, 1, 851),
+(18, 6, 1, 55),
+(19, 6, 1, 7990),
+(20, 2, 1, 11062),
+(21, 9, 1, 1468);
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `admin`
+-- Indexes for table `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`adminid`);
 
 --
--- Chỉ mục cho bảng `contact`
+-- Indexes for table `contact`
 --
 ALTER TABLE `contact`
   ADD PRIMARY KEY (`contact_id`);
 
 --
--- Chỉ mục cho bảng `customer`
+-- Indexes for table `customer`
 --
 ALTER TABLE `customer`
   ADD PRIMARY KEY (`customerid`);
 
 --
--- Chỉ mục cho bảng `product`
+-- Indexes for table `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`product_id`);
 
 --
--- Chỉ mục cho bảng `stock`
+-- Indexes for table `stock`
 --
 ALTER TABLE `stock`
   ADD PRIMARY KEY (`stock_id`);
 
 --
--- Chỉ mục cho bảng `transaction`
+-- Indexes for table `transaction`
 --
 ALTER TABLE `transaction`
   ADD PRIMARY KEY (`transaction_id`);
 
 --
--- Chỉ mục cho bảng `transaction_detail`
+-- Indexes for table `transaction_detail`
 --
 ALTER TABLE `transaction_detail`
   ADD PRIMARY KEY (`transacton_detail_id`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `admin`
+-- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
   MODIFY `adminid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT cho bảng `contact`
+-- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
 
 --
--- AUTO_INCREMENT cho bảng `customer`
+-- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
   MODIFY `customerid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT cho bảng `stock`
+-- AUTO_INCREMENT for table `stock`
 --
 ALTER TABLE `stock`
   MODIFY `stock_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT cho bảng `transaction_detail`
+-- AUTO_INCREMENT for table `transaction_detail`
 --
 ALTER TABLE `transaction_detail`
-  MODIFY `transacton_detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `transacton_detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
